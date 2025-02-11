@@ -76,3 +76,19 @@ function calculateShippingCost(weight, location, expedited = false) {
 
 calculateShippingCost(10, "USA", true);
 calculateShippingCost(5 , "Canada", false);
+
+//////////////////////////////
+// Task 5: Returning Values //
+//////////////////////////////
+
+console.log("--------------------------------------");
+console.log("Task 5: Returning Values");
+
+function calculateLoanInterest(principal, rate, years) {
+    let interest = principal * rate * years;
+    console.log(`Total Interest: $${interest.toFixed(2)}`)
+    return interest; // returning value because instructions say "return total interest" though problem functions same without
+}
+
+calculateLoanInterest(1000, .05, 3);
+calculateLoanInterest(5000, .07, 5);
