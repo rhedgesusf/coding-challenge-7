@@ -126,7 +126,23 @@ function createBudgetTracker() {
     };
 }
 
-// Test Cases
 let budget = createBudgetTracker();
 budget(300);
 budget(200);
+
+/////////////////////////////////////
+// Task 8: Recursion in Javascript //
+/////////////////////////////////////
+
+console.log("--------------------------------------");
+console.log("Task 8: Recursion in Javascript");
+
+function calculateGrowth(years, revenue) {
+    if (years < 10)
+    {
+        return calculateGrowth(years + 1, revenue * 1.05);
+    }
+    return revenue.toFixed(2);
+}
+console.log(`Projected Revenue(8, 1000): $${calculateGrowth(8, 1000)}`);
+console.log(`Projected Revenue(5, 5000): $${calculateGrowth(5, 5000)}`);
