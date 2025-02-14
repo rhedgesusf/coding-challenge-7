@@ -137,7 +137,7 @@ console.log("Task 6: Higher-Order Functions");
 //  filterFunction - the function to filter out values
 function filterHighValueTransactions(transactions, filterFunction) {
     let filteredTransactions = transactions.filter(filterFunction);
-    console.log(`Filter Transactions: `, filteredTransactions)
+    console.log("Filter Transactions: ", filteredTransactions)
 }
 
 let transactions = [500, 1200, 3000, 800, 2200];
